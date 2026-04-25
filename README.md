@@ -19,11 +19,13 @@ An interactive maze game where the player competes against an AI to reach the go
 
 ---
 
-## 🖼️ Screenshot
+## 🖼️ Screenshots
 
-![Game Screenshot](screenshot.png)
+### Home Screen
+![Home](front.png)
 
----
+### Game Screen
+![Game](game.png)
 
 ## 🛠️ Tech Stack
 
