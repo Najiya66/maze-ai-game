@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maze AI Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🧩 Maze Race Game</h1>
+
+<div id="controls">
+    <label>Select Level: </label>
+    <select id="level">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="startGame()">▶️ Start Game</button>
+</div>
+
+<div id="info">
+    <span>🟢 You</span>
+    <span>🔴 AI</span>
+</div>
+
+<button onclick="restartGame()">🔄 Restart</button>
+
+<div id="maze"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
