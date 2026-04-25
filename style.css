@@ -1,0 +1,89 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#controls {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+select {
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 18px;
+}
+
+#maze {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    gap: 4px;
+    margin: 30px auto;
+    width: fit-content;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background 0.3s;
+}
+
+.wall {
+    background: #0f2027;
+}
+
+.path {
+    background: #dfe9f3;
+}
+
+.player {
+    background: linear-gradient(45deg, #00ff87, #60efff);
+    box-shadow: 0 0 10px #00ff87;
+    animation: pulse 0.6s infinite;
+}
+
+.ai {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    box-shadow: 0 0 10px #ff416c;
+    animation: pulse 0.6s infinite;
+}
+
+.end {
+    background: gold;
+    box-shadow: 0 0 15px yellow;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #218838;
+}
